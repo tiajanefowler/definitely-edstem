@@ -1,0 +1,535 @@
+<!-- oOoOooOh how sPOoky this is ......-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSE340 - 26sp - Definitely an Ed discussion!!</title>
+    <link rel="icon" type="image/png" href="images/definitely-ed.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header id="top-bar" aria-label="Top navigation">
+      <section class="top-bar-overlay" aria-hidden="true"></section>
+    </header>
+
+    <main id="discussion-layout">
+      <aside id="course-column" aria-label="Courses">
+        <section class="new-thread-wrap">
+          <button id="new-thread" type="button">New Thread</button>
+        </section>
+
+        <section class="sidebar-group">
+          <h2>COURSES</h2>
+          <ul>
+            <li>BUG 101 - Intro to Catching Beetles <span>2</span></li>
+            <li class="active">CSE 340 - 26sp</li>
+            <li>VEGHIST 215 - History of Vegetables <span>3</span></li>
+            <li>NICE 200 - Responding Kindly to TAs <span>4487</span></li>
+            <li>GAME 579 - Advanced Spoons <span>12</span></li>
+            <li class="link">2 more</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-group">
+          <h2>CATEGORIES</h2>
+          <ul class="category-list">
+            <li class="category-item active">
+              <span class="category-label"><span class="cat-dot general"></span>General</span>
+              <span class="category-close" aria-hidden="true">×</span>
+            </li>
+            <li class="category-item">
+              <span class="category-label"><span class="cat-dot lectures"></span>Lectures</span>
+            </li>
+            <li class="category-item">
+              <span class="category-label"><span class="cat-dot sections"></span>Sections</span>
+            </li>
+            <li class="category-item">
+              <span class="category-label"><span class="cat-dot final-project"></span>Final Project</span>
+            </li>
+            <li class="category-item">
+              <span class="category-label"><span class="cat-dot assignments"></span>Assignments</span>
+            </li>
+            <li class="category-item">
+              <span class="category-label"><span class="cat-dot social"></span>Social</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <section id="thread-column" aria-label="Threads list">
+        <section class="search-wrap">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="20" height="20" role="img" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input id="thread-search" class="discuss-sidebar-search-input" type="text" placeholder="Search" aria-label="Search threads">
+          <button id="clear-search" type="button" aria-label="Clear search">x</button>
+        </section>
+
+        <section class="filter-wrap">
+          <button id="filter-button" type="button">
+            <span>Filter</span>
+            <span class="filter-chevron" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </span>
+          </button>
+        </section>
+
+        <section id="thread-list" aria-live="polite">
+          <section class="thread-group">
+            <h3>This Week</h3>
+
+            <button type="button" class="thread-row" data-thread-id="199">
+              <span class="thread-row-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 1 1 5.82 1c0 1.5-1 2-2 2"></path>
+                  <circle cx="12" cy="17" r="0.5"></circle>
+                </svg>
+              </span>
+              <span class="thread-row-content">
+                <span class="thread-title-row"><span class="thread-title">Request To Teaching Staff</span></span>
+                <span class="thread-meta"><span class="thread-category">General</span><span class="thread-author">Artie Cholk</span><span class="thread-time">Today</span></span>
+              </span>
+            </button>
+
+            <button type="button" class="thread-row" data-thread-id="198">
+              <span class="thread-row-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                  <path d="m3 11 18-5v12L3 14v-3z"></path>
+                  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                </svg>
+              </span>
+              <span class="thread-row-content">
+                <span class="thread-title-row"><span class="thread-title">URGENT: HEART THIS POST.</span></span>
+                <span class="thread-meta"><span class="thread-category">General</span><span class="thread-author"><span class="prof-name-wrap"><span class="prof-name-default">Professor T.</span><span class="prof-name-hover">Professor T. (T stands for Terrific)</span></span><span class="instructor-badge">INSTRUCTOR</span></span><span class="thread-time">Today</span></span>
+              </span>
+            </button>
+
+            <button type="button" class="thread-row" data-thread-id="197">
+              <span class="thread-row-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 1 1 5.82 1c0 1.5-1 2-2 2"></path>
+                  <circle cx="12" cy="17" r="0.5"></circle>
+                </svg>
+              </span>
+              <span class="thread-row-content">
+                <span class="thread-title-row"><span class="thread-title">Question :)</span><span class="thread-title-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg></span></span>
+                <span class="thread-meta"><span class="thread-category">General</span><span class="thread-author">Napa Ka Bije</span><span class="thread-time">2 days ago</span></span>
+              </span>
+            </button>
+
+            <button type="button" class="thread-row" data-thread-id="196">
+              <span class="thread-row-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 1 1 5.82 1c0 1.5-1 2-2 2"></path>
+                  <circle cx="12" cy="17" r="0.5"></circle>
+                </svg>
+              </span>
+              <span class="thread-row-content">
+                <span class="thread-title-row"><span class="thread-title">Lecture location</span><span class="thread-title-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg></span></span>
+                <span class="thread-meta"><span class="thread-category">General</span><span class="thread-author">Brock Oli</span><span class="thread-time">3 days ago</span></span>
+              </span>
+            </button>
+          </section>
+
+          <section class="thread-group">
+            <h3>Last Week</h3>
+            <button type="button" class="thread-row" data-thread-id="195">
+              <span class="thread-row-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 1 1 5.82 1c0 1.5-1 2-2 2"></path>
+                  <circle cx="12" cy="17" r="0.5"></circle>
+                </svg>
+              </span>
+              <span class="thread-row-content">
+                <span class="thread-title-row"><span class="thread-title">Emulator slow</span><span class="thread-title-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg></span></span>
+                <span class="thread-meta"><span class="thread-category">General</span><span class="thread-author">Olive Appleton</span><span class="thread-time">4 days ago</span></span>
+              </span>
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <section id="detail-column" aria-label="Selected thread">
+        <article class="thread-detail-view" data-thread-id="199">
+          <section class="detail-post">
+            <header class="detail-header">
+              <h1 class="post-title">Request To Teaching Staff<span class="thread-number"> #199</span></h1>
+              <div class="detail-meta-row">
+                <section class="post-author-block">
+                  <section class="avatar-circle avatar-artie" aria-hidden="true"></section>
+                  <section class="post-author-copy">
+                    <p><span class="post-author-name">Artie Cholk</span></p>
+                    <p class="post-meta">Today in <strong class="meta-category">General</strong></p>
+                  </section>
+                </section>
+                <section class="post-stats" aria-label="Post stats">
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1z"/></svg></span><span class="stat-label">PIN</span></section>
+                  <section class="stat-item"><span class="stat-icon">★</span><span class="stat-label">STAR</span></section>
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></span><span class="stat-label">WATCH</span></section>
+                  <section class="stat-item"><span class="stat-number">61</span><span class="stat-label">VIEWS</span></section>
+                </section>
+              </div>
+            </header>
+            <section class="post-content-row">
+              <section class="post-vote" aria-label="Post votes">
+                <span class="post-vote-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                <span class="post-vote-count" data-base-count="0" data-hide-zero="true"></span>
+              </section>
+              <section class="detail-body">
+                <p>Hello teaching staff, I've noticed that sometimes student replies don't have likes on them, but every reply by Professor T. does. I'm wondering if we could make sure every post + reply gets a like. thanks so much!!</p>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <article class="thread-detail-view" data-thread-id="198" hidden>
+          <section class="detail-post">
+            <header class="detail-header">
+              <h1 class="post-title">URGENT: HEART THIS POST.<span class="thread-number"> #198</span></h1>
+              <div class="detail-meta-row">
+                <section class="post-author-block">
+                  <section class="avatar-circle avatar-prof-terrific" aria-hidden="true"></section>
+                  <section class="post-author-copy">
+                    <p><span class="post-author-name"><span class="prof-name-wrap"><span class="prof-name-default">Professor T.</span><span class="prof-name-hover">Professor T. (T stands for Terrific)</span></span><span class="instructor-badge">INSTRUCTOR</span></span></p>
+                    <p class="post-meta">Today in <strong class="meta-category">General</strong></p>
+                  </section>
+                </section>
+                <section class="post-stats" aria-label="Post stats">
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1z"/></svg></span><span class="stat-label">PIN</span></section>
+                  <section class="stat-item"><span class="stat-icon">★</span><span class="stat-label">STAR</span></section>
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></span><span class="stat-label">WATCH</span></section>
+                  <section class="stat-item"><span class="stat-number">102</span><span class="stat-label">VIEWS</span></section>
+                </section>
+              </div>
+            </header>
+            <section class="post-content-row">
+              <section class="post-vote" aria-label="Post votes">
+                <span class="post-vote-heart heart-filled" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                <span class="post-vote-count" data-base-count="23">24</span>
+              </section>
+              <section class="detail-body">
+                <p>I will consider extending your FP deadline to Sunday at 11:59PM instead of 11:59AM if I get enough engagement with this post. Your likes are very important to the course and serve as invaluable feedback to the teaching staff. If you have not already done so, please heart this post, and flag this to your classmates as well.</p>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <article class="thread-detail-view" data-thread-id="197" hidden>
+          <section class="detail-post">
+            <header class="detail-header">
+              <h1 class="post-title">Question :)<span class="thread-number"> #197</span></h1>
+              <div class="detail-meta-row">
+                <section class="post-author-block">
+                  <section class="avatar-circle avatar-napa" aria-hidden="true"></section>
+                  <section class="post-author-copy">
+                    <p><span class="post-author-name">Napa Ka Bije</span></p>
+                    <p class="post-meta">2 days ago in <strong class="meta-category">General</strong></p>
+                  </section>
+                </section>
+                <section class="post-stats" aria-label="Post stats">
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1z"/></svg></span><span class="stat-label">PIN</span></section>
+                  <section class="stat-item"><span class="stat-icon">★</span><span class="stat-label">STAR</span></section>
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></span><span class="stat-label">WATCH</span></section>
+                  <section class="stat-item"><span class="stat-number">102</span><span class="stat-label">VIEWS</span></section>
+                </section>
+              </div>
+            </header>
+            <section class="post-content-row">
+              <section class="post-vote" aria-label="Post votes">
+                <span class="post-vote-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                <span class="post-vote-count">102</span>
+              </section>
+              <section class="detail-body">
+                <p>Hey, I think all of the teaching staff is great but Professor T. is especially super cool. I'm wondering if you have any advice for becoming as exceptionally wonderful, outstandingly terrific, unimaginably intelligent, unbelievably well-spoken, unfairly beautiful, alarmingly articulate, preposterously talented, and supernaturally knowledgeable as she is.</p>
+              </section>
+            </section>
+          </section>
+
+          <section class="answer-block">
+            <h2>1 Answer</h2>
+            <article class="answer-card professor-answer-card">
+              <section class="answer-vote-rail">
+                <span class="heart-outline heart-filled" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </span>
+                <span class="answer-like-count" data-base-count="0">1</span>
+                <span class="answer-checkmark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <path d="m20 6-11 11-5-5"></path>
+                  </svg>
+                </span>
+              </section>
+              <section class="professor-answer-main">
+                <section class="avatar-circle avatar-prof-terrific" aria-hidden="true"></section>
+                <section class="answer-copy">
+                  <header>
+                    <p class="professor-answer-author"><span class="prof-name-wrap"><span class="prof-name-default">Professor T.</span><span class="prof-name-hover">Professor T. (T stands for Terrific)</span></span><span class="instructor-badge">INSTRUCTOR</span></p>
+                    <p class="professor-answer-time">2 days ago</p>
+                  </header>
+                  <p class="professor-answer-content">If everyone was exceptional, the word would lose its meaning</p>
+                  <section class="comment-actions">
+                    <p class="comment-link">Comment</p>
+                    <span class="more-link" aria-hidden="true">•••</span>
+                  </section>
+                </section>
+              </section>
+            </article>
+
+            <section class="threaded-replies answer-threaded-replies">
+              <article class="comment-card thread-reply level-1">
+                <section class="avatar-circle avatar-prof-terrific" aria-hidden="true"></section>
+                <section class="comment-copy">
+                  <header>
+                    <p class="comment-author"><span class="prof-name-wrap"><span class="prof-name-default">Professor T.</span><span class="prof-name-hover">Professor T. (T stands for Terrific)</span></span><span class="instructor-badge">INSTRUCTOR</span></p>
+                  </header>
+                  <p class="comment-body">
+                    <img class="reply-inline-image" src="images/just-joking.png" alt="just joking">
+                  </p>
+                  <section class="comment-actions">
+                    <span class="heart-outline heart-filled small" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </span>
+                    <span class="comment-like-count" data-base-count="0">1</span>
+                    <p class="comment-link">Comment</p>
+                    <span class="more-link" aria-hidden="true">•••</span>
+                  </section>
+                </section>
+              </article>
+            </section>
+          </section>
+        </article>
+
+        <article class="thread-detail-view" data-thread-id="196" hidden>
+          <section class="detail-post">
+            <header class="detail-header">
+              <h1 class="post-title">Lecture location<span class="thread-number"> #196</span></h1>
+              <div class="detail-meta-row">
+                <section class="post-author-block">
+                  <section class="avatar-circle avatar-brock-oli" aria-hidden="true"></section>
+                  <section class="post-author-copy">
+                    <p><span class="post-author-name">Brock Oli</span></p>
+                    <p class="post-meta">3 days ago in <strong class="meta-category">General</strong></p>
+                  </section>
+                </section>
+                <section class="post-stats" aria-label="Post stats">
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1z"/></svg></span><span class="stat-label">PIN</span></section>
+                  <section class="stat-item"><span class="stat-icon">★</span><span class="stat-label">STAR</span></section>
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></span><span class="stat-label">WATCH</span></section>
+                  <section class="stat-item"><span class="stat-number">88</span><span class="stat-label">VIEWS</span></section>
+                </section>
+              </div>
+            </header>
+            <section class="post-content-row">
+              <section class="post-vote" aria-label="Post votes">
+                <span class="post-vote-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                <span class="post-vote-count" data-base-count="0" data-hide-zero="true"></span>
+              </section>
+              <section class="detail-body">
+                <p>Hello, my MyPlan isn't working and I've forgotten where lecture is. Could someone please tell me where to go?</p>
+              </section>
+            </section>
+          </section>
+
+          <section class="answer-block">
+            <h2>4 Replies</h2>
+            <section class="threaded-replies">
+            <article class="comment-card thread-reply level-0">
+              <section class="avatar-circle avatar-gus-aspara" aria-hidden="true"></section>
+              <section class="comment-copy">
+                <header>
+                  <p class="comment-author">Gus Aspara</p>
+                </header>
+                <p class="comment-body">CSE2 downstairs</p>
+                <section class="comment-actions">
+                  <p class="comment-link">Comment</p>
+                  <p class="comment-link">Edit</p>
+                  <p class="comment-link">Delete</p>
+                  <p class="comment-link">Endorse</p>
+                  <span class="more-link" aria-hidden="true">•••</span>
+                </section>
+              </section>
+            </article>
+
+            <article class="comment-card thread-reply level-1">
+              <section class="avatar-circle avatar-brock-oli" aria-hidden="true"></section>
+              <section class="comment-copy">
+                <header>
+                  <p class="comment-author">Brock Oli</p>
+                </header>
+                <p class="comment-body">Where is this?</p>
+                <section class="comment-actions">
+                  <p class="comment-link">Comment</p>
+                  <p class="comment-link">Edit</p>
+                  <p class="comment-link">Delete</p>
+                  <p class="comment-link">Endorse</p>
+                  <span class="more-link" aria-hidden="true">•••</span>
+                </section>
+              </section>
+            </article>
+
+            <article class="comment-card thread-reply level-2">
+              <section class="avatar-circle avatar-gus-aspara" aria-hidden="true"></section>
+              <section class="comment-copy">
+                <header>
+                  <p class="comment-author">Gus Aspara</p>
+                </header>
+                <p class="comment-body">CSE2 btwn the IMA and drumheller</p>
+                <section class="comment-actions">
+                  <p class="comment-link">Comment</p>
+                  <p class="comment-link">Edit</p>
+                  <p class="comment-link">Delete</p>
+                  <p class="comment-link">Endorse</p>
+                  <span class="more-link" aria-hidden="true">•••</span>
+                </section>
+              </section>
+            </article>
+
+            <article class="comment-card thread-reply level-3">
+              <section class="avatar-circle avatar-brock-oli" aria-hidden="true"></section>
+              <section class="comment-copy">
+                <header>
+                  <p class="comment-author">Brock Oli</p>
+                </header>
+                <p class="comment-body">oh I thought it was at the Bothell campus, is participation required today?</p>
+                <section class="comment-actions">
+                  <p class="comment-link">Comment</p>
+                  <p class="comment-link">Edit</p>
+                  <p class="comment-link">Delete</p>
+                  <p class="comment-link">Endorse</p>
+                  <span class="more-link" aria-hidden="true">•••</span>
+                </section>
+              </section>
+            </article>
+            </section>
+          </section>
+        </article>
+
+        <article class="thread-detail-view" data-thread-id="195" hidden>
+          <section class="detail-post">
+            <header class="detail-header">
+              <h1 class="post-title">Olive Appleton<span class="thread-number"> #195</span></h1>
+              <div class="detail-meta-row">
+                <section class="post-author-block">
+                  <section class="avatar-circle avatar-olive-appleton" aria-hidden="true"></section>
+                  <section class="post-author-copy">
+                    <p><span class="post-author-name">Olive Appleton</span></p>
+                    <p class="post-meta">4 days ago in <strong class="meta-category">General</strong></p>
+                  </section>
+                </section>
+                <section class="post-stats" aria-label="Post stats">
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1z"/></svg></span><span class="stat-label">PIN</span></section>
+                  <section class="stat-item"><span class="stat-icon">★</span><span class="stat-label">STAR</span></section>
+                  <section class="stat-item"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="13" height="13" role="img" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></span><span class="stat-label">WATCH</span></section>
+                  <section class="stat-item"><span class="stat-number">149</span><span class="stat-label">VIEWS</span></section>
+                </section>
+              </div>
+            </header>
+            <section class="post-content-row">
+              <section class="post-vote" aria-label="Post votes">
+                <span class="post-vote-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                <span class="post-vote-count">2</span>
+              </section>
+              <section class="detail-body">
+                <p>my emulator is so slow. yesterday i ran out of storage and rn i'm not sure if it's cuz I have a lot of stuff open but tbh maybe i jst need to clear out some space</p>
+              </section>
+            </section>
+          </section>
+
+          <section class="answer-block">
+            <h2>1 Answer</h2>
+            <article class="answer-card professor-answer-card">
+              <section class="answer-vote-rail">
+                <span class="heart-outline heart-filled" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </span>
+                <span class="answer-like-count" data-base-count="0">1</span>
+                <span class="answer-checkmark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <path d="m20 6-11 11-5-5"></path>
+                  </svg>
+                </span>
+              </section>
+              <section class="professor-answer-main">
+                <section class="avatar-circle avatar-prof-terrific" aria-hidden="true"></section>
+                <section class="answer-copy">
+                  <header>
+                    <p class="professor-answer-author">
+                      <span class="prof-name-wrap"><span class="prof-name-default">Professor T.</span><span class="prof-name-hover">Professor T. (T stands for Terrific)</span></span><span class="instructor-badge">INSTRUCTOR</span>
+                    </p>
+                    <p class="professor-answer-time">3 days ago</p>
+                  </header>
+                  <p class="professor-answer-content">Is there a question as part of this post?</p>
+                  <section class="comment-actions">
+                    <p class="comment-link">Comment</p>
+                    <span class="more-link" aria-hidden="true">•••</span>
+                  </section>
+                </section>
+              </section>
+            </article>
+          </section>
+        </article>
+
+        <section class="your-answer-block">
+          <h2>Your Answer</h2>
+          <section class="answer-toolbar" aria-hidden="true">
+            <span class="paragraph-label">Paragraph</span>
+            <span>▾</span>
+            <span><strong>B</strong></span>
+            <span><em>I</em></span>
+            <span class="toolbar-underline">U</span>
+            <span class="tool-icon chevrons-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="20" height="20" role="img" aria-hidden="true">
+                <polyline points="11 17 6 12 11 7"></polyline>
+                <polyline points="18 17 13 12 18 7"></polyline>
+              </svg>
+            </span>
+            <span class="tool-icon link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="20" height="20" role="img" aria-hidden="true">
+                <path d="M10 14a3.5 3.5 0 0 1 0-5l2-2a3.5 3.5 0 0 1 5 5l-1 1"></path>
+                <path d="M14 10a3.5 3.5 0 0 1 0 5l-2 2a3.5 3.5 0 0 1-5-5l1-1"></path>
+              </svg>
+            </span>
+            <span class="tool-icon more-horizontal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <circle cx="6" cy="12" r="1.5" fill="currentColor" />
+                <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+                <circle cx="18" cy="12" r="1.5" fill="currentColor" />
+              </svg>
+            </span>
+          </section>
+          <section class="answer-textarea-wrap" id="answer-textarea-wrap">
+            <textarea id="your-answer-textarea" aria-label="Your answer"></textarea>
+          </section>
+          <section class="post-button-row">
+            <button id="post-answer" type="button">Post</button>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <div id="all-hearts-popup" class="all-hearts-overlay" hidden aria-hidden="true">
+      <section class="all-hearts-popup-card" role="dialog" aria-label="Celebration link" aria-modal="true">
+        <img class="all-hearts-popup-image" src="images/success.png" alt="">
+        <a class="all-hearts-popup-link" href="https://youtu.be/X8Ey4r_VGLQ?si=J1g1ZvYvMlPrs0xF" target="_blank" rel="noopener noreferrer">CLICK THIS</a>
+      </section>
+    </div>
+  </body>
+</html>
