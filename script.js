@@ -5,8 +5,6 @@
   let allHeartsCelebrationShown = false;
   let successCelebrationRunning = false;
 
-  const ALL_HEARTS_VIDEO_URL = "https://youtu.be/X8Ey4r_VGLQ?si=J1g1ZvYvMlPrs0xF";
-
   window.addEventListener("load", init);
 
   function init() {
