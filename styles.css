@@ -1030,18 +1030,21 @@ section.sidebar-group span {
 
 .answer-textarea-wrap {
 	position: relative;
+	display: block;
 	width: 100%;
 	max-width: none;
+	border: 1px solid #ddd;
+	border-top: 0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	overflow: hidden;
+	line-height: 0;
 }
 
 .answer-textarea-wrap::before {
 	content: "";
 	position: absolute;
 	inset: 0;
-	border: 1px solid #ddd;
-	border-top: 0;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
 	background-image: var(--answer-bg-image, none);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1057,18 +1060,19 @@ section.sidebar-group span {
 }
 
 .your-answer-block textarea {
+	display: block;
 	position: relative;
 	z-index: 1;
 	width: 100%;
 	height: 220px;
-	border: 1px solid #ddd;
-	border-top: 0;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
 	resize: vertical;
 	padding: 10px 12px;
 	font: inherit;
 	font-size: 13px;
+	line-height: 1.4;
 	background: rgba(255, 255, 255, 0.96);
 	transition: background-color 420ms ease;
 	box-sizing: border-box;
