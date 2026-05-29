@@ -1156,6 +1156,35 @@ section.sidebar-group span {
 	}
 }
 
+.mobile-only-notice {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.mobile-only-notice {
+		display: flex;
+		position: fixed;
+		inset: 0;
+		z-index: 10002;
+		align-items: center;
+		justify-content: center;
+		padding: 32px 24px;
+		background: rgba(0, 0, 0, 0.88);
+		pointer-events: auto;
+	}
+
+	.mobile-only-notice-text {
+		margin: 0;
+		max-width: 320px;
+		font-size: clamp(22px, 7vw, 32px);
+		font-weight: 700;
+		line-height: 1.25;
+		text-align: center;
+		color: #fff;
+		text-transform: lowercase;
+	}
+}
+
 .all-hearts-overlay {
 	position: fixed;
 	inset: 0;
